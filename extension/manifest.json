@@ -1,0 +1,30 @@
+
+{
+  "manifest_version": 3,
+  "name": "NOVA AI - Coding Assistant",
+  "version": "0.1.0",
+  "description": "Your intelligent coding companion, powered by NOVA AI.",
+"permissions": [
+  "activeTab",
+  "storage",
+  "scripting",
+  "sidePanel",
+  "tabs"
+],
+  "host_permissions": [
+    "http://127.0.0.1:8787/*"
+  ],
+  "optional_host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Open NOVA AI"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  }
+}

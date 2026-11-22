@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOVA AI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="app">
+
+    <header class="header">
+      <div class="brand">
+        <div class="logo">N</div>
+        <div>
+          <h1>NOVA AI</h1>
+          <p>Networked Operator for Virtual Assistance</p>
+        </div>
+      </div>
+
+      <div class="status">
+        <span class="status-dot"></span>
+        <span>ONLINE</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="welcome">
+        <h2>Hello, Developer.</h2>
+        <p>I'm NOVA. What are we building today?</p>
+      </section>
+
+      <section class="tools">
+        <h3>DEVELOPER TOOLS</h3>
+
+        <div class="tool-grid">
+          <button id="inspectBtn" class="tool-button">
+            <span>🔍</span>
+            <strong>Inspect Code</strong>
+            <small>Read code on this page</small>
+          </button>
+
+          <button id="errorsBtn" class="tool-button">
+            <span>🐛</span>
+            <strong>Error Detective</strong>
+            <small>Explain detected errors</small>
+          </button>
+
+          <button id="projectBtn" class="tool-button">
+            <span>📁</span>
+            <strong>Understand Project</strong>
+            <small>Analyze accessible code</small>
+          </button>
+
+          <button id="fixBtn" class="tool-button">
+            <span>🛠️</span>
+            <strong>Code Fixer</strong>
+            <small>Get suggested fixes</small>
+          </button>
+        </div>
+      </section>
+
+      <section class="chat-section">
+        <div class="section-heading">
+          <h3>NOVA CHAT</h3>
+          <span>AI ASSISTANT</span>
+        </div>
+
+        <div id="chatMessages" class="chat-messages">
+          <div class="message nova-message">
+            <strong>NOVA</strong>
+            <p>Hey! I'm ready to help with your code. Ask me anything!</p>
+          </div>
+        </div>
+
+        <div class="input-area">
+          <textarea
+            id="messageInput"
+            placeholder="Ask NOVA anything..."
+            rows="2"
+          ></textarea>
+
+          <button id="sendBtn" class="send-button">➤</button>
+        </div>
+
+        <p class="footer-note">
+          NOVA AI • Powered by OpenAI
+        </p>
+      </section>
+    </main>
+
+  </div>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>
